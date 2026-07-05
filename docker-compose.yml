@@ -1,0 +1,90 @@
+services:
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8080:8080
+    networks:
+      - backend
+  db:
+    container_name: postgresql
+    image: dhi.io/postgres:18-alpine3.22
+    ports:
+      - 5432:5432
+    networks:
+      - backend
+    environment:
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - "postgres-data:/var/lib/postgresql"
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U ${DB_USER} -d ${DB_NAME}"]
+      interval: 5s
+      timeout: 5s
+      retries: 10
+  redis:
+    container_name: redis
+    image: redis:alpine
+    ports:
+      - 6379:6379
+    networks:
+      - worker
+  apiconsumer:
+    container_name: apiconsumer
+    depends_on:
+      redis:
+        condition: service_started
+    build:
+      context: ./apiconsumer
+      dockerfile: Dockerfile
+    networks:
+      - worker
+    environment:
+      API_APP_TOKEN: ${API_APP_TOKEN}
+      PYTHONUNBUFFERED: 1
+  worker:
+    container_name: worker
+    depends_on:
+      redis:
+        condition: service_started
+      db:
+        condition: service_healthy
+    build:
+      context: ./worker
+      dockerfile: Dockerfile
+    networks:
+      - worker
+      - backend
+    environment:
+      REDIS__HOST: redis
+      POSTGRES__CONNECTIONSTRING: Host=db;Username=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME}
+
+  api:
+    container_name: api
+    depends_on:
+      redis:
+        condition: service_started
+      db:
+        condition: service_healthy
+    build:
+      context: ./api
+      dockerfile: Dockerfile
+    ports:
+      - 5000:8080
+    networks:
+      - backend
+      - worker
+      - frontend
+    environment:
+      REDIS__HOST: redis
+      POSTGRES__CONNECTIONSTRING: Host=db;Username=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME}
+
+networks:
+  backend:
+  frontend:
+  worker:
+
+volumes:
+  postgres-data:

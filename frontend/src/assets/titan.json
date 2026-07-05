@@ -1,0 +1,106 @@
+[
+    {
+        "name": "Takedar",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/B1wr5ID.png",
+            "ArmorChestUpper": "https://i.imgur.com/pshWOVg.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/i4aIpYc.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/aBlus03.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/aBlus03.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/cSQkrwB.png",
+            "ArmorHandRight": "https://i.imgur.com/hbBxdVk.png",
+            "ArmorHandLeft": "https://i.imgur.com/xBCDiSi.png"
+        }
+    },
+    {
+        "name": "Jukk",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/BfDc73Z.png",
+            "ArmorChestUpper": "https://i.imgur.com/pDYhRLF.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/4OgkB6f.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/BWX7wKD.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/MRk3dOc.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/MjUOhbJ.png",
+            "ArmorHandRight": "https://i.imgur.com/Wuac0dO.png",
+            "ArmorHandLeft": "https://i.imgur.com/J6UM3Nf.png"
+        }
+    },
+    {
+        "name": "Sterl",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/brqZkjg.png",
+            "ArmorChestUpper": "https://i.imgur.com/m4KOLBz.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/AYC9Riq.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/AZldPvN.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/uwsY3Zg.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/KLpgR5P.png",
+            "ArmorHandRight": "https://i.imgur.com/S19yttu.png",
+            "ArmorHandLeft": "https://i.imgur.com/LOznUlV.png"
+        }
+    },
+    {
+        "name": "Lojak",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/9lc7GUa.png",
+            "ArmorChestUpper": "https://i.imgur.com/mZdwI3U.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/5qAMatz.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/tFr9ZKS.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/pRWrDFW.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/4DstNuF.png",
+            "ArmorHandRight": "https://i.imgur.com/ZV9ORkg.png",
+            "ArmorHandLeft": "https://i.imgur.com/fWX0eOd.png"
+        }
+    },
+    {
+        "name": "Mohaca",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/PxH6ulU.png",
+            "ArmorChestUpper": "https://i.imgur.com/BiN46yZ.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/ZS2tk5x.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/Ze9vycw.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/EzZvgR9.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/3XNFlZs.png",
+            "ArmorHandRight": "https://i.imgur.com/enLuO17.png",
+            "ArmorHandLeft": "https://i.imgur.com/eNuk845.png"
+        }
+    },
+    {
+        "name": "Terro",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/l2aapD8.png",
+            "ArmorChestUpper": "https://i.imgur.com/Q6Kfa4j.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/ZDllTax.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/eqaEDsr.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/7cbQX6Q.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/SidK4yl.png",
+            "ArmorHandRight": "https://i.imgur.com/6XYqiy5.png",
+            "ArmorHandLeft": "https://i.imgur.com/S1L6Zkg.png"
+        }
+    },
+    {
+        "name": "Klonk",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/EIbUTHN.png",
+            "ArmorChestUpper": "https://i.imgur.com/RRhgbbS.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/96EwxFC.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/eW2ytew.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/w7q6Clu.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/iaW8Cpu.png",
+            "ArmorHandRight": "https://i.imgur.com/cyOg3Gs.png",
+            "ArmorHandLeft": "https://i.imgur.com/URH7yP1.png"
+        }
+    },
+    {
+        "name": "Priker",
+        "part": {
+            "ArmorHead": "https://i.imgur.com/abSiuOm.png",
+            "ArmorChestUpper": "https://i.imgur.com/ZCYr9MV.png",
+            "ArmorArmUpperRight": "https://i.imgur.com/sjIoRL0.png",
+            "ArmorArmUpperLeft": "https://i.imgur.com/38i1wab.png",
+            "ArmorLegUpperRight": "https://i.imgur.com/nGX5Oas.png",
+            "ArmorLegUpperLeft": "https://i.imgur.com/lHsF1iO.png",
+            "ArmorHandRight": "https://i.imgur.com/d8qMZPP.png",
+            "ArmorHandLeft": "https://i.imgur.com/7AJbzZf.png"
+        }
+    }
+]
