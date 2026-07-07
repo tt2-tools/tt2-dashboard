@@ -34,15 +34,15 @@ export const PART_KEY_TO_IMAGE_KEY: Record<PartKey, string> = {
   leg_r:      'ArmorLegUpperRight',
 }
 
-export const PART_INFO: Record<PartKey, { label: string; short: string; area: string }> = {
-  head:       { label: 'Tête',     short: 'Tête',   area: 'head' },
-  torso:      { label: 'Torse',    short: 'Torse',  area: 'torso' },
-  shoulder_l: { label: 'Épaule G', short: 'Ép. G',  area: 'shl' },
-  shoulder_r: { label: 'Épaule D', short: 'Ép. D',  area: 'shr' },
-  hand_l:     { label: 'Main G',   short: 'Main G', area: 'hnl' },
-  hand_r:     { label: 'Main D',   short: 'Main D', area: 'hnr' },
-  leg_l:      { label: 'Jambe G',  short: 'Jb. G',  area: 'lgl' },
-  leg_r:      { label: 'Jambe D',  short: 'Jb. D',  area: 'lgr' },
+export const PART_INFO: Record<PartKey, { label: string }> = {
+  head:       { label: 'Tête' },
+  torso:      { label: 'Torse' },
+  shoulder_l: { label: 'Épaule G' },
+  shoulder_r: { label: 'Épaule D' },
+  hand_l:     { label: 'Main G' },
+  hand_r:     { label: 'Main D' },
+  leg_l:      { label: 'Jambe G' },
+  leg_r:      { label: 'Jambe D' },
 }
 
 export const PART_KEYS: PartKey[] = [

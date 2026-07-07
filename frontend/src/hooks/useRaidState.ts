@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import type { PartKey, BodyPartState } from '../types/titan'
+import type { PartKey } from '../types/titan'
 import type { RaidInfo, RaidState } from '../types/raid'
 import { buildRaidInfo, buildInitialState, getLevels, TIERS } from '../utils/raid'
 
@@ -47,9 +47,6 @@ export function useRaidState() {
     }))
   }
 
-  const countParts = (titanId: string, field: keyof BodyPartState) =>
-    Object.values(raidState[titanId] ?? {}).filter((p) => p[field]).length
-
   return {
     selectedTier,
     selectedLevel,
@@ -58,6 +55,5 @@ export function useRaidState() {
     handleTierChange,
     handleLevelChange,
     togglePart,
-    countParts,
   }
 }

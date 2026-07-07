@@ -43,6 +43,7 @@ services:
       - worker
     environment:
       API_APP_TOKEN: ${API_APP_TOKEN}
+      TOKENS: ${TOKENS}
       PYTHONUNBUFFERED: 1
   worker:
     container_name: worker
