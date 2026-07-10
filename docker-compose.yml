@@ -81,6 +81,8 @@ services:
     environment:
       REDIS__HOST: redis
       POSTGRES__CONNECTIONSTRING: Host=db;Username=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME}
+      SEEDAPI__BASEURL: ${SEED_API_BASE_URL}
+      SEEDAPI__TOKEN: ${SEED_API_TOKEN}
 
 networks:
   backend:
