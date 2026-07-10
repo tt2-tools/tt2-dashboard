@@ -43,6 +43,7 @@ services:
       - worker
     environment:
       API_APP_TOKEN: ${API_APP_TOKEN}
+      TOKENS: ${TOKENS}
       PYTHONUNBUFFERED: 1
   worker:
     container_name: worker
@@ -80,6 +81,8 @@ services:
     environment:
       REDIS__HOST: redis
       POSTGRES__CONNECTIONSTRING: Host=db;Username=${DB_USER};Password=${DB_PASSWORD};Database=${DB_NAME}
+      SEEDAPI__BASEURL: ${SEED_API_BASE_URL}
+      SEEDAPI__TOKEN: ${SEED_API_TOKEN}
 
 networks:
   backend:

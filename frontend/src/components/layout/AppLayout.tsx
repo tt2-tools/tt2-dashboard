@@ -5,7 +5,7 @@ import { IconHome, IconCards, IconSword, IconUsers } from '@tabler/icons-react'
 const NAV_ITEMS = [
   { to: '/home', label: 'Home', icon: IconHome },
   { to: '/cards', label: 'Cards', icon: IconCards },
-  { to: '/raids', label: 'Raid Statement', icon: IconSword },
+  { to: '/raids', label: 'TT2RO Exporter', icon: IconSword },
   { to: '/clan', label: 'Clan', icon: IconUsers },
 ]
 
@@ -35,19 +35,6 @@ export default function AppLayout() {
               />
             ))}
           </Stack>
-        </AppShell.Section>
-
-        <AppShell.Section>
-          <Divider mb="md" />
-          <NavLink
-            label="Mon compte"
-            leftSection={
-              <Avatar size={28} radius="xl" color="blue">
-                G
-              </Avatar>
-            }
-            style={{ borderRadius: 'var(--mantine-radius-sm)' }}
-          />
         </AppShell.Section>
       </AppShell.Navbar>
 

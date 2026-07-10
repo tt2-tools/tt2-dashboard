@@ -14,10 +14,14 @@ builder.Services.AddSingleton(_ =>
 builder.Services.AddSingleton<LiveEventBroadcaster>();
 builder.Services.AddHostedService(sp => sp.GetRequiredService<LiveEventBroadcaster>());
 
+builder.Services.AddHttpClient<RaidSeedService>(client =>
+    client.BaseAddress = new Uri(builder.Configuration["SeedApi:BaseUrl"]!));
+
 var app = builder.Build();
 
 app.MapRaidEndpoints();
 app.MapPlayerEndpoints();
 app.MapSseEndpoints();
+app.MapRaidSeedEndpoints();
 
 app.Run();
